@@ -1,0 +1,163 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #122031;
+  --muted: #4a5a6a;
+  --accent: #b32025;
+  --accent-dark: #8f181b;
+  --border: #dbe4ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.brand-subtitle,
+.brand-tagline {
+  margin: 0.1rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.82rem;
+}
+
+main,
+.site-footer {
+  width: min(1040px, 92%);
+  margin: 0 auto;
+}
+
+.hero,
+.content-block,
+.site-footer {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.eyebrow {
+  color: var(--muted);
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 1rem;
+  font-weight: 700;
+}
+
+.price-highlight {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.card {
+  background: #f9fbff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-price,
+.reviewer,
+.stars,
+.video-script {
+  color: var(--muted);
+}
+
+.callout {
+  text-align: center;
+}
+
+@media (min-width: 920px) {
+  .site-header {
+    grid-template-columns: 1.35fr auto auto;
+    align-items: center;
+  }
+}
