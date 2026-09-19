@@ -8,6 +8,8 @@
   --accent-dark: #8f181b;
   --whatsapp: #168c4b;
   --whatsapp-dark: #0f6e3a;
+  --facebook: #1877f2;
+  --facebook-dark: #0d65d9;
   --border: #dbe4ef;
   --shadow: 0 14px 35px rgba(18, 32, 49, 0.08);
 }
@@ -148,7 +150,10 @@ main,
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 0.7rem 1.2rem;
@@ -193,6 +198,14 @@ main,
 .btn-whatsapp:hover,
 .btn-whatsapp:focus-visible {
   background: var(--whatsapp-dark);
+}
+
+.social-icon {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+  flex: 0 0 auto;
 }
 
 .cards {
@@ -322,6 +335,21 @@ main,
   color: var(--text);
   font-weight: 800;
   text-decoration: none;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-link-facebook {
+  color: var(--facebook) !important;
+}
+
+.social-link-facebook:hover,
+.social-link-facebook:focus-visible {
+  color: var(--facebook-dark) !important;
 }
 
 @media (max-width: 600px) {
