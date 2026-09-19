@@ -343,6 +343,11 @@ main,
   gap: 0.5rem;
 }
 
+.social-link .social-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .social-link-facebook {
   color: var(--facebook) !important;
 }
