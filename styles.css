@@ -113,7 +113,7 @@ main,
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(5, 16, 25, 0.78) 0%, rgba(5, 16, 25, 0.42) 38%, rgba(5, 16, 25, 0.3) 100%),
-    url("https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    url("image2") center/cover no-repeat;
   padding-block: clamp(2rem, 7vw, 4.5rem);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 18px 40px rgba(8, 16, 24, 0.28);
