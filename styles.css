@@ -92,7 +92,7 @@ main, .site-footer { width: min(1040px, 92%); margin: 0 auto; }
 .price-card h3 { margin-top: 0; }
 .price-amount { margin: 0.4rem 0; color: var(--accent); font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 900; line-height: 1.15; }
 .price-detail { margin-bottom: 0; color: var(--muted); }
-.site-footer { margin-bottom: 2rem; text-align: center; }
+.site-footer { margin: 1rem auto 2rem; text-align: center; }
 .site-footer h2 { margin-top: 0; }
 .social-links { margin-top: 1rem; }
 .social-links a { color: var(--text); font-weight: 800; text-decoration: none; }
