@@ -444,6 +444,17 @@ main,
   margin-top: 1.25rem;
 }
 
+.package-card .btn-call {
+  margin-top: 0.65rem;
+  background: var(--whatsapp);
+  color: #fff;
+}
+
+.package-card .btn-call:hover,
+.package-card .btn-call:focus-visible {
+  background: var(--whatsapp-dark);
+}
+
 .badge {
   display: inline-flex;
   align-self: flex-start;
@@ -478,7 +489,8 @@ main,
     grid-template-columns: 1fr;
   }
 
-  .package-card .btn {
+  .package-card .btn,
+  .package-card .btn-call {
     width: 100%;
   }
 
