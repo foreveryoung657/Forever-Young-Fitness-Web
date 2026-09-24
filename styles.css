@@ -378,6 +378,85 @@ main,
   color: var(--facebook-dark) !important;
 }
 
+/* Specialist online coaching packages */
+.online-coaching-section {
+  text-align: center;
+}
+
+.eyebrow-dark {
+  color: var(--accent);
+  text-shadow: none;
+  margin-bottom: 0.35rem;
+}
+
+.section-intro {
+  max-width: 780px;
+  margin: 0 auto 1.75rem;
+  color: var(--muted);
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.package-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.25rem;
+  background: linear-gradient(145deg, #fff, #f5f8fc);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(18, 32, 49, 0.06);
+}
+
+.package-card.featured {
+  border: 2px solid var(--accent);
+  box-shadow: 0 12px 28px rgba(179, 32, 37, 0.16);
+}
+
+.package-card h3 {
+  margin: 0.75rem 0 0.35rem;
+  line-height: 1.25;
+}
+
+.package-card .subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.package-card ul {
+  flex: 1;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.package-card li + li {
+  margin-top: 0.45rem;
+}
+
+.package-card .btn {
+  align-self: flex-start;
+  margin-top: 1.25rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .about-flex {
     flex-direction: column;
@@ -393,6 +472,22 @@ main,
   .contact-methods .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card .btn {
+    width: 100%;
+  }
+
+  .site-nav {
+    gap: 0.5rem 0.7rem;
+  }
+
+  .site-nav a {
+    font-size: 0.72rem;
   }
 }
 
