@@ -489,6 +489,10 @@ main,
     grid-template-columns: 1fr;
   }
 
+  .package-card.featured {
+    order: -1;
+  }
+
   .package-card .btn,
   .package-card .btn-call {
     width: 100%;
