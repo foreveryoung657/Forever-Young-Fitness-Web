@@ -110,13 +110,17 @@ main, .site-footer { width: min(1040px, 92%); margin: 0 auto; }
 .section-intro { max-width: 780px; margin: 0 auto 1.75rem; color: var(--muted); }
 .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; text-align: left; }
 .package-card { display: flex; flex-direction: column; height: 100%; padding: 1.25rem; background: linear-gradient(145deg, #fff, #f5f8fc); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 8px 20px rgba(18, 32, 49, 0.06); }
+.package-image { display: block; width: 100%; aspect-ratio: 1.85; object-fit: cover; object-position: center 30%; border-radius: 9px; margin-top: 0.85rem; background: var(--border); }
+.package-image-cycling { object-position: 68% center; }
+.package-image-joint { object-position: center 8%; }
 .package-card.featured { border: 2px solid var(--accent); box-shadow: 0 12px 28px rgba(179, 32, 37, 0.16); }
 .package-card h3 { margin: 0.75rem 0 0.35rem; line-height: 1.25; }
 .package-card .subtitle { margin: 0; color: var(--muted); font-weight: 700; }
 .package-card ul { flex: 1; margin: 1rem 0 0; padding-left: 1.2rem; }
 .package-card li + li { margin-top: 0.45rem; }
-.package-card .btn { align-self: flex-start; margin-top: 1.25rem; }
-.package-card .btn-call { margin-top: 0.65rem; background: var(--whatsapp); color: #fff; }
+.package-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.package-card .btn { min-height: 44px; padding: 0.55rem 0.8rem; font-size: 0.86rem; white-space: nowrap; }
+.package-card .btn-call { background: var(--whatsapp); color: #fff; }
 .package-card .btn-call:hover, .package-card .btn-call:focus-visible { background: var(--whatsapp-dark); }
 .badge { display: inline-flex; align-self: flex-start; padding: 0.3rem 0.65rem; border-radius: 999px; background: var(--text); color: #fff; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; }
 
@@ -129,7 +133,7 @@ main, .site-footer { width: min(1040px, 92%); margin: 0 auto; }
   .cta-row .btn, .contact-methods .btn { width: 100%; text-align: center; }
   .package-grid { grid-template-columns: 1fr; }
   .package-card.featured { order: -1; }
-  .package-card .btn, .package-card .btn-call { width: 100%; }
+  .package-actions { flex-wrap: wrap; }
   .site-nav { gap: 0.5rem 0.7rem; }
   .site-nav a { font-size: 0.72rem; }
 }
