@@ -156,3 +156,25 @@ main, .site-footer { width: min(1040px, 92%); margin: 0 auto; }
 }
 
 .site-footer .contact-methods { justify-content: center; }
+
+/* Original photography: keep faces clear and portrait exercises in frame. */
+.hero { display: grid; grid-template-columns: 1fr 1fr; padding: 0; background: #122b29; }
+.hero-copy { padding: clamp(1.4rem, 3vw, 2.4rem); align-self: center; }
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+.hero-photo { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; object-position: center; }
+.service-images figure { aspect-ratio: 4 / 5; background: #edf0ed; }
+.service-images img, .service-images figure:nth-child(2) img { object-position: center; }
+.about-photo { object-position: center 25%; }
+.package-image { height: 220px; object-position: center; }
+.photo-cycling-outdoors, .photo-supported-strength, .photo-suspension-training, .photo-woodland-walking { object-fit: contain; background: #edf0ed; }
+.life-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.life-gallery figure { margin: 0; }
+.life-gallery img { display: block; width: 100%; height: 230px; object-fit: cover; border-radius: 10px; }
+.life-gallery figure:nth-child(2) img { object-fit: contain; background: #edf0ed; }
+.life-gallery figcaption { margin-top: 0.5rem; color: var(--muted); font-weight: 700; }
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-photo { min-height: 0; height: auto; object-fit: contain; }
+  .life-gallery { grid-template-columns: 1fr; }
+  .life-gallery img { height: auto; max-height: 420px; object-fit: contain; background: #edf0ed; }
+}
